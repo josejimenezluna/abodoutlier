@@ -7,3 +7,4 @@ Description: Performs angle-based outlier detection on a given dataframe. Three 
 Depends: cluster, R (>= 3.1.2)
 License: MIT + file LICENSE
 LazyData: true
+Encoding: UTF-8
