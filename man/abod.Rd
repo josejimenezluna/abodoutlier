@@ -2,7 +2,7 @@
 \alias{abod}
 %- Also NEED an '\alias' for EACH other topic documented here.
 \title{
-Angle-based Outlier Factor
+Angle-Based Outlier Factor
 }
 \description{
 Computes angle-based outlier factor for each observation in the dataset}
