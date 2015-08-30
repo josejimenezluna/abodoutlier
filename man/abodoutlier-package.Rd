@@ -21,5 +21,3 @@ License: \tab MIT License\cr
 José Jiménez\cr
 Maintainer: José Jiménez <jose@jimenezluna.com>
 }
-
-
