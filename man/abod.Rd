@@ -7,7 +7,7 @@ Angle-based Outlier Factor
 \description{
 Computes angle-based outlier factor for each observation in the dataset}
 \usage{
-abod(data, method = "complete")
+abod(data, method = "complete", n_sample_size = trunc(nrow(data)/10), k = 15)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -17,7 +17,7 @@ Dataframe in which to compute angle-based outlier factor.
 }
   \item{method}{
 %%     ~~Describe \code{method} here~~
-Method to perform. 'complete' will use the entire dataset (O(n³) complexity) to
+Method to perform. 'complete' will use the entire dataset (cubic complexity) to
 compute abof. 'randomized' will use a random sample of the data of size 'n_sample_size'. 'knn' will
 compute abof among 'k' nearest neighbours. 
 }
@@ -50,23 +50,10 @@ presence of an outlier.
 }
 \author{
 %%  ~~who you are~~
-José Jiménez <jose@jimenezluna.com>
-}
-\note{
-%%  ~~further notes~~
-}
-
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-\seealso{
-%% ~~objects to See Also as \code{\link{help}}, ~~~
+Jose Jimenez <jose@jimenezluna.com>
 }
 \examples{
-abod(faithful, method = "randomized", n_sample_size = 50)
-abod(faithful, method = "knn", k = 20)
+abod(faithful, method = "randomized", n_sample_size = 5)
+abod(faithful, method = "knn", k = 5)
 
 }
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
-\keyword{ ~kwd1 }
-\keyword{ ~kwd2 }% __ONLY ONE__ keyword per line

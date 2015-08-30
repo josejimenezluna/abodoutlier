@@ -1,1 +1,3 @@
+importFrom("cluster", "daisy")
+importFrom("stats", "var")
 exportPattern("^[[:alpha:]]+")
